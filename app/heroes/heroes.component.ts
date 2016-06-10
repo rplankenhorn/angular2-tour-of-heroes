@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
 import { Router } from '@angular/router-deprecated';
-import { Hero } from './hero';
-import { HeroDetailComponent } from './hero-detail.component';
-import { HeroService } from './hero.service';
+import { Hero } from '../services/models/hero';
+import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
+import { HeroService } from '../services/hero.service';
 
 @Component({
     selector: 'my-heros',
-    templateUrl: 'app/heroes.component.html',
-    styleUrls: ['app/heroes.component.css'],
+    templateUrl: 'app/heroes/heroes.component.html',
+    styleUrls: ['app/heroes/heroes.component.css'],
     directives: [HeroDetailComponent]
 })
 
